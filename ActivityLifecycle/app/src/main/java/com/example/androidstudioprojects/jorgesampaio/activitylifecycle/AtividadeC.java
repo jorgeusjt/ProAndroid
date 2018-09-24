@@ -1,5 +1,5 @@
 package com.example.jorgesampaio.androidstudioprojects.activitylifecycle;
-
+/*Jorge sampaio RA: 81513901*/
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;

@@ -1,5 +1,5 @@
 package com.example.jorgesampaio.androidstudioprojects.activitylifecycle;
-
+/*Jorge sampaio RA: 81513901*/
 import org.junit.Test;
 
 import static org.junit.Assert.*;

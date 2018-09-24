@@ -1,6 +1,6 @@
 package com.example.jorgesampaio.androidstudioprojects.activitylifecycle;
 
-
+/*Jorge sampaio RA: 81513901*/
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
