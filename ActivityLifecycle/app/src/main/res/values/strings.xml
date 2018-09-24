@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Activity</string>
+    <string name="lista">Lista e métodos do Ciclo de Vida</string>
+    <string name="btnA">INICIAR A</string>
+    <string name="btnB">INICIAR B</string>
+    <string name="btnC">INICIAR C</string>
+    <string name="dialogo">DIÁLOGO</string>
+    <string name="status">Status da Atividade</string>
+</resources>
