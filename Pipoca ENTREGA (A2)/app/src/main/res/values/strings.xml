@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">Pipoca Projeto</string>
-    <string name="edit_message">Texto</string>
-    <string name="button_send">Enviar</string>
+    <string name="btn_buscar">Buscar</string>
+    <string name="lorem">O filme mostra as aventuras de João Grilo e Chicó, dois nordestinos pobres que vivem de golpes para sobreviver. Eles estão sempre enganando o povo de um pequeno vilarejo no sertão da Paraíba, inclusive o temido cangaceiro Severino de Aracaju, </string>
 
+    <string-array name="genero">
+        <item>Ação</item>
+        <item>Aventura</item>
+        <item>Comédia</item>
+        <item>Ficção</item>
+        <item>Suspense</item>
+        <item>Terror</item>
+    </string-array>
 </resources>
