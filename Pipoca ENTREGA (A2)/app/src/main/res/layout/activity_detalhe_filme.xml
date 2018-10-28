@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetalhesFilme">
+    tools:context=".DetalhesFilme"
+    android:background="@color/background">
 
     <TextView
+        android:id="@+id/tituloFilme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="46dp"
-        android:text="17 - O Auto da Compadecida"
         android:textColor="#000"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        />
 
     <ImageView
         android:id="@+id/imageView"
@@ -30,29 +31,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageView"
-        android:layout_alignTop="@+id/direcaoDetailTextView"
+        android:layout_alignTop="@+id/direcao_TextView"
         android:text="Direção:"
         android:textColor="#000"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/direcaoDetailTextView"
+        android:id="@+id/direcao_TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="225dp"
         android:layout_marginStart="75dp"
-        android:text="Guel Arraes" />
+        />
 
     <TextView
         android:id="@+id/lancamentoDetailTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="193dp"
-        android:text="10 de setembro de 2000" />
+        android:layout_marginBottom="192dp"
+        android:layout_toEndOf="@+id/textView4" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -63,14 +63,24 @@
         android:textColor="#000"
         android:textStyle="bold"/>
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="339dp"
-        android:layout_height="123dp"
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="126dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_marginBottom="53dp"
-        android:text="@string/lorem" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp">
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginBottom="53dp"
+            />
+
+    </ScrollView>
+
 
     <TextView
         android:id="@+id/textView4"
@@ -84,13 +94,12 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/popularidadeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/lancamentoDetailTextView"
         android:layout_alignTop="@+id/textView4"
-        android:text="100 de 100" />
-
+        android:layout_marginLeft="5dp"/>
 
 
 </RelativeLayout>

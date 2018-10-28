@@ -1,6 +1,7 @@
 package br.usjt.pipoca;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Filme implements Serializable {
@@ -14,6 +15,12 @@ public class Filme implements Serializable {
     private String diretor;
     private Genero genero;
 
+
+    public String getDataFormatada(){
+        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
+        return  formato.format(dataLancamento);
+    }
+
     public int getId() {
         return id;
     }
@@ -22,9 +29,7 @@ public class Filme implements Serializable {
         this.id = id;
     }
 
-    public String getTitulo() {
-        return titulo;
-    }
+    public String getTitulo() {return titulo;}
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
